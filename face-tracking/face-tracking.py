@@ -7,7 +7,11 @@ import cv2
 import mediapipe as mp
 
 
-MODEL_PATH = Path(__file__).with_name("face_landmarker.task")
+MODEL_PATH = (
+    Path(__file__).parent
+    / "models"
+    / "face_landmarker.task"
+)
 CAMERA_INDEX = 0
 MAX_FACES = 1
 
